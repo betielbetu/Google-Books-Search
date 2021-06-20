@@ -3,10 +3,6 @@ const path = require('path');
 const mongoose = require('mongoose');
 const Book = mongoose.model('Book');
 
-routes.get('/', (req, res) => {
-	res.sendFile(path.resolve(__dirname , "/../client/build/index.html"));
-});
-
 routes.get('/books/id', (req, res) => {
 	Book.find({})
 		.then(dbTransaction => {
@@ -68,10 +64,6 @@ routes.delete('/books/:id', (req, res) => {
 		}).catch(err => {
 			res.status(500).send(err);
 		});
-});
-
-routes.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname = 'client/build/index.html'));
 });
 
 module.exports = routes;

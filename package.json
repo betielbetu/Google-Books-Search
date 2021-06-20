@@ -10,7 +10,7 @@
     "start": "npm run server",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd client && npm install && npm run build && cd ..",
+    "install": "cd client && npm install && npm run build && cd .."
   },
   "author": "",
   "license": "ISC",

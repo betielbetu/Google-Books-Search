@@ -40,3 +40,7 @@
 .pointer {
   cursor: pointer;
 }
+
+body {
+  background-color: aqua !important;
+}

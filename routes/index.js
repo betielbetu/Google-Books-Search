@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Book = mongoose.model('Book');
 
 routes.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname , "client","build","index.html"));
+	res.sendFile(path.join(__dirname , "/../client/build/index.html"));
 });
 
 routes.get('/books/id', (req, res) => {

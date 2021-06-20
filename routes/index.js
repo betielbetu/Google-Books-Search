@@ -3,7 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const Book = mongoose.model('Book');
 
-routes.get('*', (req, res) => {
+routes.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname , "/../client/build/index.html"));
 });
 
